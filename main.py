@@ -15,7 +15,7 @@ app = FastAPI()
 # Esta variable debe configurarse en Render como 'GROQ_API_KEY'
 # con el valor de tu clave secreta.
 cliente_groq = OpenAI(
-    api_key=os.environ.get("GROQ_API_KEY"),
+    api_key=os.environ.get("OPENAI_API_KEY"),
     base_url="https://api.groq.com/openai/v1"
 )
 
